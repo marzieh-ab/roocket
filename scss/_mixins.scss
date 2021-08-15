@@ -1,0 +1,57 @@
+@mixin headingStyle($line-height, $margin-bottom, $font-size) {
+  line-height: $line-height;
+  margin-bottom: $margin-bottom;
+  font-size: $font-size;
+}
+
+
+
+
+@mixin mediaQuery($break){
+
+
+  @if $break == vvsm {
+    @media only screen and (max-width: $vvsm-breakpoint) {
+      @content;
+    }
+  }
+  
+    
+  @if $break == vsm {
+    @media only screen and (max-width: $vsm-breakpoint) {
+      @content;
+    }
+  }
+
+
+  @if $break == sm {
+    @media only screen and (max-width: $sm-breakpoint) {
+      @content;
+    }
+  }
+  @if $break == s {
+    @media only screen and (max-width: $s-breakpoint) {
+      @content;
+    }
+  }
+
+ 
+
+  @else if $break == m {
+    @media only screen and (max-width: $m-breakpoint) {
+      @content;
+    }
+  }
+  @else if $break == l {
+    @media only screen and (max-width: $l-breakpoint) {
+      @content;
+    }
+  }
+
+  @else if $break == lg {
+    @media only screen and (max-width: $lg-breakpoint) {
+      @content;
+    }
+  }
+
+}

@@ -1,0 +1,148 @@
+// global margin
+@for $i from 0 through 10 {
+  .m-#{$i} {
+    margin: #{$i * 0.625rem} !important;
+  }
+}
+
+// margin top
+@for $i from 0 through 10 {
+  .mt-#{$i} {
+    margin-top: #{$i * 0.625rem} !important;
+  }
+}
+
+// margin bottom
+@for $i from 0 through 10 {
+  .mb-#{$i} {
+    margin-bottom: #{$i * 0.625rem} !important;
+  }
+}
+
+// margin right
+@for $i from 0 through 10 {
+  .mr-#{$i} {
+    margin-right: #{$i * 0.625rem} !important;
+  }
+}
+
+// margin left
+@for $i from 0 through 10 {
+  .ml-#{$i} {
+    margin-left: #{$i * 0.625rem} !important;
+  }
+}
+
+// margin top & bottom
+@for $i from 0 through 10 {
+  .mtb-#{$i} {
+    margin-top: #{$i * 0.625rem} !important;
+    margin-bottom: #{$i * 0.625rem} !important;
+  }
+}
+
+// margin right & left
+@for $i from 0 through 10 {
+  .mrl-#{$i} {
+    margin-right: #{$i * 0.625rem} !important;
+    margin-left: #{$i * 0.625rem} !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+// global padding
+@for $i from 0 through 10 {
+  .p-#{$i} {
+    padding: #{$i * 0.625}rem !important;
+  }
+}
+
+// padding left
+@for $i from 0 through 10 {
+  .pl-#{$i} {
+    padding-left: #{$i * 0.625}rem !important;
+  }
+}
+
+// padding top
+@for $i from 0 through 10 {
+  .pt-#{$i} {
+    padding-top: #{$i * 0.625}rem !important;
+  }
+}
+
+// padding right
+@for $i from 0 through 10 {
+  .pr-#{$i} {
+    padding-right: #{$i * 0.625}rem !important;
+  }
+}
+
+// padding bottom
+@for $i from 0 through 10 {
+  .pb-#{$i} {
+    padding-bottom: #{$i * 0.625}rem !important;
+  }
+}
+
+// padding top & bottom
+@for $i from 0 through 10 {
+  .ptb-#{$i} {
+    padding-top: #{$i * 0.625}rem !important;
+    padding-bottom: #{$i * 0.625}rem !important;
+  }
+}
+
+// padding right & left
+@for $i from 0 through 10 {
+  .prl-#{$i} {
+    padding-right: #{$i * 0.625}rem !important;
+    padding-left: #{$i * 0.625}rem !important;
+  }
+}
+
+
+
+// width
+@for $i from 0 through 10 {
+  .w-#{$i} {
+    width: #{$i * 10%} !important;
+  }
+}
+
+@for $i from 0 through 30 {
+  .w-#{$i}-px {
+    width: #{$i * 10px} !important;
+  }
+}
+
+@for $i from 1 through 10 {
+  .mw-#{$i} {
+    min-width: #{$i * 100}px !important;
+  }
+}
+
+
+@include mediaQuery(m) {
+  @for $i from 1 through 10 {
+    .mw-#{$i}-md {
+      min-width: #{$i * 100}px !important;
+    }
+  }
+}
+
+
+@include mediaQuery(s) {
+  @for $i from 1 through 10 {
+    .mw-#{$i}-sm {
+      min-width: #{$i * 100}px !important;
+    }
+  }
+}

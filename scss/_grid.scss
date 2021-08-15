@@ -1,0 +1,120 @@
+.grid{
+    display: grid;
+    grid-gap:5px
+}
+@for $i from 1 to 12 {
+    .grid-#{$i}{
+        @extend .grid;
+        grid-template-columns:  repeat($i,1fr);
+
+    }
+    
+    
+}
+@for $i from  1 to 12 {
+    .grid-col-#{$i}{
+        grid-column: #{$i span};
+
+    }
+
+    
+}
+@for $i from  1 to 12 {
+    .grid-row-#{$i}{
+        grid-row: #{$i span};
+
+    }
+
+    
+}
+$flex-property:(
+    flex-direction:column column-reverse row row-reverse,
+    flex-wrap: wrap nowrap wrap-reverse,
+    justify-content: center end start space-between space-around space-evenly,
+    align-items: center end start baseline stretch,
+    align-content: center end start baseline stretch space-between space-around space-evenly,
+
+
+);
+@each $i in map-get($map:$flex-property , $key: flex-direction){
+    .fd-#{$i}{
+       flex-direction: $i;
+    }
+    
+}
+@each $i in map-get($map:$flex-property , $key:flex-wrap ) {
+    .fw-#{$i}{
+        flex-wrap: $i;
+
+    }
+    
+}
+
+@each $i in map-get($map:$flex-property, $key: justify-content ) {
+    .jc-#{$i}{
+        justify-content: $i;
+
+    }
+    
+}
+
+@each $i in map-get($map:$flex-property, $key:  align-items ) {
+    .ai-#{$i}{
+        align-items: $i;
+
+    }
+    
+}
+
+@each $i in map-get($map:$flex-property, $key:  align-content ) {
+    .ac-#{$i}{
+        align-content: $i;
+
+    }
+    
+}
+
+
+// flex-grow
+@for $i from 0 through 10 {
+    .fg-#{$i} {
+      flex-grow: $i;
+    }
+  }
+  
+  // flex-basis
+  @for $i from 0 through 10 {
+    .fb-#{$i} {
+      flex-basis: #{$i * 10%};
+    }
+  }
+  
+  
+  // flex
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    // gap: .3125rem;
+  }
+  
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      flex: 1 1 #{$i * 100px}
+    }
+  }
+  
+  
+  // column gap
+  @for $i from 0 through 10 {
+    .c-gap-#{$i} {
+      column-gap: #{$i * 0.3125rem} !important;
+    }
+  }
+  
+  // row gap
+  @for $i from 0 through 10 {
+    .r-gap-#{$i} {
+      row-gap: #{$i * 0.3125rem} !important;
+    }
+  }
+  

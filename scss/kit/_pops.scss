@@ -1,0 +1,91 @@
+.popup {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-flex;
+  justify-content: center;
+}
+
+// The actual popup
+.popup .popup-header {
+  visibility: hidden;
+  background-color: #fff;
+  color: #212529;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 0.5rem 0.9375rem;
+  position: absolute;
+  z-index: 1;
+}
+
+// Popup arrow
+.popup .popup-header::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+// Toggle this class - hide and show the popup
+.popup:hover .popup-header{
+  visibility: visible;
+  animation: fade .7s;
+}
+
+.popup-header span {
+  color: #2c3e50;
+  display: block;
+  padding: 0.3125rem 0rem 0.9375rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.popup-header p {
+  color: rgba(33, 37, 41, 0.8);
+}
+
+.pop-left .popup-header {
+  bottom: -100% !important;
+  right: 110% !important;
+}
+
+.pop-left .popup-header::after {
+  top: 60% !important;
+  left: calc(100% + 5px) !important;
+  transform: rotate(270deg) !important;
+}
+
+.pop-right .popup-header {
+  bottom: -100% !important;
+  left: 110% !important;
+}
+
+.pop-right .popup-header::after {
+  top: 60% !important;
+  right: 100% !important;
+  transform: rotate(90deg) !important;
+}
+
+.pop-bottom .popup-header {
+  top: 120% !important;
+}
+
+.pop-bottom .popup-header::after {
+  top: calc(0% - 10px) !important;
+  transform: rotate(180deg) !important;
+}
+
+.pop-top .popup-header {
+  bottom: 120% !important;
+}
+
+.pop-top .popup-header::after {
+  top: calc(100% - 1px) !important;
+  transform: rotate(0deg) !important;
+}

@@ -1,0 +1,61 @@
+
+body{
+    font-family: vazir;
+    direction: rtl;
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::placeholder{
+    color:#96a3b8;
+    font-family:'vazir';
+
+}
+//container
+.container{
+    max-width:1366px !important;
+    margin:  auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+
+// text-alling
+@each $i in $text-aligns {
+    .t-aligns-#{$i}{
+        text-align: $i;
+    }
+    
+}
+// display
+@each $i in $displays {
+    .d-#{$i}{
+        display: $i;
+    }
+    
+}
+// position
+@each $i in $position {
+    .pos-#{$i}{
+        position: $i;
+    }
+
+    
+}
+// cursor
+@each $i in $cursor{
+    .cur-#{$i}{
+        cursor: $i;
+
+    }
+    
+}

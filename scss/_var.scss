@@ -1,0 +1,118 @@
+$text-aligns:left,right,center, justify;
+$position:relative, absolute, fixed;
+$cursor: zoom-in, zoom-out, alias, all-scroll, cell, col-resize, context-menu, help, move, pointer;
+$displays:grid, inline-grid, flex, inline-flex, block, inline-block, inline ,none;
+
+
+
+// breakpoints
+$vvsm-breakpoint: 300px;
+$vsm-breakpoint: 400px;
+$sm-breakpoint: 479px;
+$s-breakpoint: 576px;
+$m-breakpoint: 768px;
+$l-breakpoint:992px;
+$lg-breakpoint: 1200px;
+
+
+
+$colors: (
+  color-white : #fff,
+  color-black : #000,
+  color-light : #e2e8f0,
+  color-dark : #475569,
+
+ color-dark2 :#334155,
+ color-dark3:#475a72,
+
+ 
+ color-dark4:#565569,
+ color-dark5:#595864,
+ color-dark6:#475577,
+ color-dark7:#47557b,
+  
+  color-light2 : #64748b,
+  color-light3:#f1f5f9,
+  color-light4:#7892b4,
+  color-light5:#727b89,
+  color-light6:#989fa9,
+  color-light7:#949f99,
+  color-light8:#7c828e,
+  color-light9:#94a3b8,
+  color-light10:#476a94,
+  color-light11:#475a7b,
+
+
+
+  
+ 
+  color-footer : #1e293b,
+  color-textheader:#64748b,
+  
+  color-coursetitle:#334155,
+  
+  color-coursedes:#747a8f,
+  color-yellow: #eab308,
+ color-green: #66dab3,
+ color-purple:#9fb0db,
+
+ color-purpel2:#49577a,
+  
+
+  color-red:#dc2c3a,
+  color-blue3: #83add4,
+ color-seo :#b76bef,
+ color-cast:#3ba1f9,
+  // cbd5e1
+  
+
+
+  
+);
+
+
+$bg-colors:(
+  bg-white : #fff,
+  bg-black : #000,
+  bg-light : #F1F5F9,
+
+  bg-dark : #475569,
+  bg-dark2:#64748B,
+
+  
+  bg-light2 : #64748b,
+ 
+  bg-light3:#f1f5f9,
+  bg-light4:#EFF6FF,
+  bg-cast:#e0e8f3,
+  bg-footer : #1e293b,
+  bg-textheader:#64748b,
+  bg-blue:#3b82f6,  
+  bg-btn:#334155,
+  bg-course:#e2e8f0,
+  bg-green:#19806a,
+  bg-green2:#10b981,
+  bg-green3:#1a9473,
+  bg-transparent: transparent,
+  bg-purpel:#49577a,
+  bg-blue1 :#315b85,
+  bg-blue2:#2563eb,
+  bg-blue3:#2f5bba,
+  bg-seo:#5b249b,
+ bg-yellow :#e9b30b,
+ bg-pink:#ef4444,
+bg-pink2 :#b5444a,
+bg-footer2:#334155,
+bg-copyright:#1e293b,
+bg-copyright2:#d2d4d7,
+
+
+ 
+  
+
+
+)
+
+
+
+

@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+@each $color-name, $color-value in $colors {
+  .#{$color-name} {
+    color: $color-value !important;
+  }
+}
+
+@each $bgcolor, $color-value in $bg-colors {
+  .#{$bgcolor} {
+    background-color: $color-value !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+// font style
+@for $i from 5 through 24 {
+  .fn-size-#{$i - 4} {
+    font-size: #{$i * 0.125rem} !important;
+  }
+}
+
+@for $i from 1 through 9 {
+  .fn-weight-#{$i} {
+    font-weight: #{$i * 100} !important;
+  }
+}
+
+@for $i from 1 through 10 {
+  .hline-#{$i} {
+    line-height: #{$i * 0.625rem} !important;
+  }
+}
